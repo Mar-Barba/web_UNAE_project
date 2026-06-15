@@ -9,8 +9,8 @@ Equipo:
 - Marbella Barba De los Santos A01660946
 - Miguel Ángel Garduño Manrique A01668481
 - Rafael Antonio Carrión Ortega A01660812
-  v2.0
-url final: https://memoretos.atoligue.uber.space/api
+
+  
 
 ---
 

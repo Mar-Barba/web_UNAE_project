@@ -1,0 +1,703 @@
+{
+  "id": "81c978f7-d28a-48b2-836b-6f72282cf770",
+  "version": "3.0",
+  "name": "New Project",
+  "url": "http://www.google.com",
+  "urls": [
+    "http://www.google.com"
+  ],
+  "plugins": [],
+  "suites": [
+    {
+      "id": "8090897b-0f1e-4cf1-8fcb-d30d13f575d7",
+      "name": "New Suite",
+      "parallel": false,
+      "persistSession": false,
+      "tests": [
+        "72a2f0d2-7ac2-4f02-898f-e3a95b8392ad"
+      ],
+      "timeout": 30000
+    }
+  ],
+  "tests": [
+    {
+      "id": "72a2f0d2-7ac2-4f02-898f-e3a95b8392ad",
+      "name": "dashboard_test2",
+      "commands": [
+        {
+          "id": "97455684-2bfb-44a6-b630-ac07ed47bf5c",
+          "command": "open",
+          "target": "https://memoretos.atoligue.uber.space/login/",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "id=user",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "4de4ee66-d9e1-4531-9282-b0ac9dab114a",
+          "targets": [
+            [
+              "id=user",
+              "id"
+            ],
+            [
+              "name=user",
+              "name"
+            ],
+            [
+              "css=#user",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@id='user'])[1]",
+              "xpath:attributes"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "id=user",
+          "value": "Pedro Gutierrez",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "9db91eb1-631e-418a-b9c1-af3f8a40b732",
+          "targets": [
+            [
+              "id=user",
+              "id"
+            ],
+            [
+              "name=user",
+              "name"
+            ],
+            [
+              "css=#user",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@id='user'])[1]",
+              "xpath:attributes"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "id=pass",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "cfc24e63-0baa-4ac3-b482-46d88f2f0689",
+          "targets": [
+            [
+              "id=pass",
+              "id"
+            ],
+            [
+              "name=pass",
+              "name"
+            ],
+            [
+              "css=#pass",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@id='pass'])[1]",
+              "xpath:attributes"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "id=pass",
+          "value": "12345678",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "27d82440-6a83-4ab9-bdeb-672b2f9d001c",
+          "targets": [
+            [
+              "id=pass",
+              "id"
+            ],
+            [
+              "name=pass",
+              "name"
+            ],
+            [
+              "css=#pass",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@id='pass'])[1]",
+              "xpath:attributes"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.btn-entrar",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "1de03940-63ae-4b42-b846-ac7a068b3a3c",
+          "targets": [
+            [
+              "css=.btn-entrar",
+              "css:finder"
+            ],
+            [
+              "xpath=(//button[@type='submit' and text()='Entrar'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//button[contains(.,'Entrar')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "mouseOver",
+          "target": "css=.class-btn",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "0eaf4f49-b57f-46df-9c02-49b4d9e0c13d",
+          "targets": [
+            [
+              "css=.class-btn",
+              "css:finder"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.search-input",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "221b01ba-5fb0-44ea-8be4-ab12fbb8a9a7",
+          "targets": [
+            [
+              "css=.search-input",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value=''])[1]",
+              "xpath:attributes"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "css=.search-input",
+          "value": "Grupo 1",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "fa5205ca-9aa4-482d-a11d-acfc5d49c922",
+          "targets": [
+            [
+              "css=.search-input",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value='Grupo A'])[1]",
+              "xpath:attributes"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.class-btn:nth-child(2)",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "d68c359d-0a53-4275-8ed2-c70f10c42cfa",
+          "targets": [
+            [
+              "css=.class-btn:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[contains(.,'Grupo A')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "linkText=←",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "5a451639-6593-49b0-8d8b-2c1189e818b5",
+          "targets": [
+            [
+              "linkText=←",
+              "linkText"
+            ],
+            [
+              "css=a",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'←')])[1]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//a[contains(@href, '/dashboard')])[1]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//a[contains(.,'←')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "linkText=Partidas recientes",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "4997a115-e53e-4a41-94fd-3176aa27739e",
+          "targets": [
+            [
+              "linkText=Partidas recientes",
+              "linkText"
+            ],
+            [
+              "css=.nav-btn:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'Partidas recientes')])[1]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//a[contains(@href, '/recent-games')])[1]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//a[contains(.,'Partidas recientes')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.search-input",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "4af741bf-e85a-493a-98df-37a85b216c3d",
+          "targets": [
+            [
+              "css=.search-input",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value=''])[1]",
+              "xpath:attributes"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "css=.search-input",
+          "value": "testfinal",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "f6f9307c-5d60-4fad-bb60-851741df341f",
+          "targets": [
+            [
+              "css=.search-input",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value='testfinal'])[1]",
+              "xpath:attributes"
+            ]
+          ]
+        },
+        {
+          "command": "sendKeys",
+          "target": "css=.search-input",
+          "value": "${KEY_ENTER}",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "e212fab3-1a6f-4034-9e0b-1f74e550dac1",
+          "targets": [
+            [
+              "css=.search-input",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value='testfinal'])[1]",
+              "xpath:attributes"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "linkText=←",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "d298d042-09ee-4a0e-af99-ffe2cc00d6d4",
+          "targets": [
+            [
+              "linkText=←",
+              "linkText"
+            ],
+            [
+              "css=.back-arrow",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'←')])[1]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//a[contains(@href, '/dashboard')])[1]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//a[contains(.,'←')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "linkText=Detalles del jugador",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "169989b1-7a2c-4912-93e7-14b5d8b1a63c",
+          "targets": [
+            [
+              "linkText=Detalles del jugador",
+              "linkText"
+            ],
+            [
+              "css=.nav-btn:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'Detalles del jugador')])[1]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//a[contains(@href, '/resume-player')])[1]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//a[contains(.,'Detalles del jugador')]",
+              "xpath:innerText"
+            ]
+          ],
+          "isBreakpoint": true
+        },
+        {
+          "command": "click",
+          "target": "css=.search-input",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "10c4d632-3f4b-4208-a872-dcb0452593e4",
+          "targets": [
+            [
+              "css=.search-input",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value=''])[1]",
+              "xpath:attributes"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "css=.search-input",
+          "value": "maria_lopez",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "f52f9f29-3a94-4f4e-822e-cc8d1ad209d9",
+          "targets": [
+            [
+              "css=.search-input",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value='maria_lopez'])[1]",
+              "xpath:attributes"
+            ]
+          ]
+        },
+        {
+          "command": "sendKeys",
+          "target": "css=.search-input",
+          "value": "${KEY_ENTER}",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "932dd5a7-69da-4532-a934-66ce5ae6038b",
+          "targets": [
+            [
+              "css=.search-input",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value='maria_lopez'])[1]",
+              "xpath:attributes"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "linkText=←",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "521b50ca-3ac2-4f47-bf4a-8d7bdbfcb567",
+          "targets": [
+            [
+              "linkText=←",
+              "linkText"
+            ],
+            [
+              "css=.back-arrow",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'←')])[1]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//a[contains(@href, '/dashboard')])[1]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//a[contains(.,'←')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "mouseOver",
+          "target": "linkText=Gráficas",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "917a8eb3-ad86-43ff-9cde-d7e32202ab17",
+          "targets": [
+            [
+              "linkText=Gráficas",
+              "linkText"
+            ],
+            [
+              "css=.btn-gray",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'Gráficas')])[1]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//a[contains(@href, '/graficas')])[1]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//a[contains(.,'Gráficas')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "linkText=Gráficas",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "c79c77f6-60c5-48a2-8b0d-0e3e55325f84",
+          "targets": [
+            [
+              "linkText=Gráficas",
+              "linkText"
+            ],
+            [
+              "css=.btn-gray",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'Gráficas')])[1]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//a[contains(@href, '/graficas')])[1]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//a[contains(.,'Gráficas')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "mouseDownAt",
+          "target": "linkText=←",
+          "value": "0,40.66666603088379",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "1a5519f0-8f85-4037-9192-90c1612a09c9",
+          "targets": [
+            [
+              "linkText=←",
+              "linkText"
+            ],
+            [
+              "css=.back-arrow-white",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'←')])[1]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//a[contains(@href, '/dashboard')])[1]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//a[contains(.,'←')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "mouseMoveAt",
+          "target": "linkText=←",
+          "value": "0,40.66666603088379",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "7672320c-b56a-4bda-8c9f-2a75d8eb61da",
+          "targets": [
+            [
+              "linkText=←",
+              "linkText"
+            ],
+            [
+              "css=.back-arrow-white",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'←')])[1]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//a[contains(@href, '/dashboard')])[1]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//a[contains(.,'←')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "mouseUpAt",
+          "target": "linkText=←",
+          "value": "0,40.66666603088379",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "661dd210-82ca-4480-bbe0-171cf82346c9",
+          "targets": [
+            [
+              "linkText=←",
+              "linkText"
+            ],
+            [
+              "css=.back-arrow-white",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'←')])[1]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//a[contains(@href, '/dashboard')])[1]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//a[contains(.,'←')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "linkText=←",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "693840a3-a4a3-45be-9e79-441b61e6c4a9",
+          "targets": [
+            [
+              "linkText=←",
+              "linkText"
+            ],
+            [
+              "css=.back-arrow-white",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'←')])[1]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//a[contains(@href, '/dashboard')])[1]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//a[contains(.,'←')]",
+              "xpath:innerText"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "snapshot": {
+    "dependencies": {},
+    "tests": [],
+    "jest": {
+      "extraGlobals": []
+    }
+  },
+  "delay": 2000
+}

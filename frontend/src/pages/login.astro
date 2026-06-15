@@ -1,0 +1,162 @@
+---
+import LoginForm from '../components/LoginForm.jsx';
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Memoretos Dashboard</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="header">
+        <div class="branding-text">
+          <h1>DASHBOARD</h1>
+          <p>Inicio de sesión</p>
+        </div>
+        <div class="logo-container">
+          <img 
+            src="https://javier.rodriguez.org.mx/itesm/2014/tecnologico-de-monterrey-blue.png" 
+            alt="Tec de Monterrey" 
+            class="logo-tec" 
+          />
+          <div class="divider"></div>
+          <img 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqgYZIRFwklAQqOAdsTuabq0FN_28MIONRPQ&s" 
+            alt="UNAE" 
+            class="logo-unae" 
+          />
+        </div>
+      </header>
+
+      <main class="login-section">
+        <LoginForm client:load />
+      </main>
+    </div>
+  </body>
+</html>
+
+<style>
+  :root { 
+    --dark-purple: #4b013e;
+    --light-purple: #a450ba; 
+    --input-bg: #f1ede4;  
+    --btn-bg: rgba(164, 80, 186, 0.6);
+  }
+
+  body {
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, var(--dark-purple) 0%, var(--light-purple) 100%);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+  }
+
+  .main-container { 
+    padding: 40px; 
+    height: 100%; 
+    display: flex; 
+    flex-direction: column; 
+  }
+
+  .header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .branding-text h1 {
+    font-size: 4rem;
+    font-weight: 300; 
+    letter-spacing: 2px;
+    margin: 0;
+  }
+
+  .branding-text p { 
+    font-size: 1.5rem; 
+    opacity: 0.9;
+    margin: 0;
+  }
+
+  .logo-container { 
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+  }
+
+  .logo-tec { height: 40px; width: auto; }
+  .logo-unae { height: 55px; width: auto; }
+
+  .divider { 
+    width: 1px; 
+    height: 40px; 
+    background-color: rgba(255, 255, 255, 0.3); 
+  }
+
+  .login-section { 
+    flex-grow: 1;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+
+  :global(.login-form) { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 25px; 
+    width: 100%; 
+    max-width: 600px; 
+  }
+
+  :global(.input-group) { 
+    display: flex; 
+    align-items: center; 
+    width: 100%; 
+    justify-content: flex-end;
+  }
+
+  :global(.input-group label) { 
+    font-size: 2rem; 
+    margin-right: 20px; 
+    font-weight: 300; 
+  }
+
+  :global(.input-group input) { 
+    width: 350px; 
+    padding: 12px 25px; 
+    border-radius: 50px;  
+    border: none; 
+    background-color: var(--input-bg); 
+    outline: none;
+    font-size: 1.2rem; 
+    color: #333;
+  }
+
+  :global(.btn-entrar) { 
+    margin-top: 20px; 
+    background-color: var(--btn-bg); 
+    color: white; 
+    border: none; 
+    padding: 12px 70px; 
+    border-radius: 10px; 
+    font-size: 1.2rem; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: background 0.3s ease; 
+  }
+
+  :global(.btn-entrar:hover) { 
+    background-color: rgba(164, 80, 186, 0.9);
+  }
+
+  :global(.signup-link) { 
+    color: white; 
+    text-decoration: none; 
+    font-size: 1rem; 
+    margin-top: 15px; 
+    opacity: 0.8; 
+  }
+</style>

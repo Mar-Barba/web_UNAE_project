@@ -1,0 +1,132 @@
+---
+import ClassManager from '../components/ClassManager.jsx';
+---
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Memoretos - Dashboard</title>
+</head>
+<body>
+    <div class="main-container">
+        <header class="header-section">
+            <div class="header-content">
+                <ClassManager client:load />
+            </div>
+
+            <div class="logo-container">
+                <img src="https://uniconexed.org/wp-content/uploads/2022/03/Tec-de-Monterrey-logo-horizontal-blue.png" alt="Tec" class="logo-tec">
+                <div class="divider"></div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqgYZIRFwklAQqOAdsTuabq0FN_28MIONRPQ&s" alt="UNAE" class="logo-unae">
+            </div>
+        </header>
+
+        <nav class="bottom-nav">
+            <a href="/recent-games" class="nav-btn">Partidas recientes</a>
+            <a href="/resume-player" class="nav-btn">Detalles del jugador</a>
+            <a href="/graficas" class="nav-btn btn-gray">Gráficas</a>
+        </nav>
+    </div>
+</body>
+</html>
+
+<style>
+    :root {
+        --dark-purple: #4b013e;
+        --light-purple: #a450ba;
+        --bg-crema: #f1ede4;
+        --btn-purple: rgba(164, 80, 186, 0.6);
+    }
+
+    body {
+        height: 100vh;
+        background: linear-gradient(135deg, var(--dark-purple), var(--light-purple));
+        color: white;
+        margin: 0;
+        padding: 30px 50px;
+        font-family: 'Segoe UI', sans-serif;
+        overflow: hidden;
+    }
+
+    .main-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 25px;
+    }
+
+    :global(.title-group h1) { font-size: 3.5rem; font-weight: 300; margin: 0; }
+    :global(.title-group p) { font-size: 1.6rem; opacity: 0.9; margin-bottom: 20px; }
+
+    :global(.search-input) {
+        width: 100%;
+        padding: 15px 30px;
+        border-radius: 15px;
+        border: none;
+        background-color: var(--bg-crema);
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+        outline: none;
+    }
+
+    :global(.class-carousel) {
+        display: flex;
+        gap: 25px;
+        overflow-x: auto;
+        padding: 10px 5px 30px 5px;
+        flex-grow: 1;
+    }
+
+    :global(.class-btn) {
+        flex-shrink: 0;
+        width: 280px;
+        height: 320px;
+        background-color: var(--bg-crema);
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #333;
+        font-weight: bold;
+        font-size: 1.2rem;
+        transition: transform 0.3s ease;
+    }
+
+    :global(.class-btn:hover) { transform: translateY(-10px); }
+
+    :global(.plus-icon) { font-size: 5rem; color: var(--dark-purple); }
+
+    .bottom-nav {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .nav-btn {
+        flex: 1;
+        padding: 15px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 12px;
+        background-color: var(--btn-purple);
+        color: white;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .btn-gray { background-color: rgba(255, 255, 255, 0.2); }
+
+    .logo-container { display: flex; align-items: center; gap: 20px; }
+    .logo-tec { height: 35px; filter: brightness(0) invert(1); }
+    .logo-unae { height: 55px; }
+    .divider { width: 1px; height: 40px; background: rgba(255,255,255,0.3); }
+</style>

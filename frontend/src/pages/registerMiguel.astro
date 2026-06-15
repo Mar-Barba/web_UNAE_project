@@ -1,0 +1,10 @@
+---
+import Layout from '../layouts/Layout.astro';
+import RegisterForm from '../components/RegisterFormMiguel.jsx';
+---
+
+<Layout title="Register - Memoretos">
+  <main style="min-height: 100vh; display: flex; align-items: center; justify-content: center; background-color: #111827; padding: 20px;">
+    <RegisterForm client:load />
+  </main>
+</Layout>

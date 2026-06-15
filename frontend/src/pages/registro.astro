@@ -1,0 +1,115 @@
+---
+import RegistroForm from '../components/RegistroForm.jsx';
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registro - Memoretos</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="header">
+        <h1>REGISTRARME</h1>
+      </header>
+      <main class="login-section">
+        <RegistroForm client:load />
+      </main>
+    </div>
+  </body>
+</html>
+
+<style>
+  :root {
+    --unae-purple: #4b013e;
+    --light-purple: #a450ba;
+    --bg-crema: #f1ede4;
+    --text-dark: #333;
+  }
+
+  body {
+    background: linear-gradient(135deg, var(--unae-purple), var(--light-purple));
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .main-container {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .header h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+
+  .login-section {
+    background-color: var(--bg-crema);
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    color: var(--text-dark);
+  }
+
+  :global(.input-group) {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  :global(.input-group label) {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: var(--unae-purple);
+  }
+
+  :global(.input-group input), 
+  :global(.input-group select) {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background-color: white;
+    font-size: 1rem;
+    outline: none;
+  }
+
+  :global(.btn-entrar) {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--unae-purple);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  :global(.btn-entrar:hover) {
+    background-color: var(--light-purple);
+  }
+
+  :global(.signup-link) {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: var(--unae-purple);
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+</style>

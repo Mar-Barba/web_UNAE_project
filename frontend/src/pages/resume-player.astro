@@ -1,0 +1,128 @@
+---
+import PlayerDetail from '../components/PlayerDetail.jsx';
+---
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Detalles del Jugador - Memoretos</title>
+</head>
+<body>
+    <div class="main-container">
+        <header class="header-section">
+            <div class="title-group">
+                <div class="title-row">
+                    <a href="/dashboard" class="back-arrow">←</a>
+                    <h1>DASHBOARD</h1>
+                </div>
+                <p>Detalles del jugador</p>
+            </div>
+            <div class="logo-container">
+                <img src="https://uniconexed.org/wp-content/uploads/2022/03/Tec-de-Monterrey-logo-horizontal-blue.png" alt="Tec" class="logo-tec">
+                <div class="divider"></div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqgYZIRFwklAQqOAdsTuabq0FN_28MIONRPQ&s" alt="UNAE" class="logo-unae">
+            </div>
+        </header>
+
+        <PlayerDetail client:load />
+    </div>
+</body>
+</html>
+
+<style>
+    :root {
+        --dark-purple: #4b013e;
+        --light-purple: #a450ba;
+        --bg-crema: #f1ede4;
+        --btn-purple: rgba(164, 80, 186, 0.6);
+    }
+
+    body {
+        min-height: 100vh;
+        background: linear-gradient(135deg, var(--dark-purple) 0%, var(--light-purple) 100%);
+        color: white;
+        margin: 0;
+        padding: 30px 50px;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    .header-section { display: flex; justify-content: space-between; margin-bottom: 20px; }
+    .title-row { display: flex; align-items: center; gap: 20px; }
+    .title-group h1 { font-size: 3.5rem; font-weight: 300; margin: 0; }
+    .title-group p { font-size: 1.5rem; opacity: 0.9; margin-left: 70px; margin-top: -10px; }
+
+    .back-arrow { font-size: 2.5rem; text-decoration: none; color: white; }
+
+    :global(.search-input) {
+        width: 100%;
+        padding: 15px 25px;
+        border-radius: 12px;
+        border: none;
+        background-color: var(--bg-crema);
+        font-style: italic;
+        margin-bottom: 30px;
+        outline: none;
+        color: #333;
+    }
+
+    :global(.player-summary) { display: flex; flex-direction: column; gap: 10px; margin-bottom: 30px; }
+
+    :global(.summary-row) {
+        background-color: var(--bg-crema);
+        color: #333;
+        display: flex;
+        justify-content: space-around;
+        padding: 15px;
+        border-radius: 15px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    :global(.summary-row span) { flex: 1; }
+    :global(.header-row) { font-size: 0.8rem; text-transform: uppercase; color: #666; }
+    :global(.data-row) { font-size: 1.1rem; }
+
+    :global(.details-layout) { display: flex; gap: 30px; align-items: stretch; }
+
+    :global(.session-details-card) {
+        background-color: var(--bg-crema);
+        border-radius: 20px;
+        padding: 25px;
+        flex-grow: 1;
+        color: #333;
+        text-align: center;
+    }
+
+    :global(.inner-table-container) { background-color: rgba(164, 80, 186, 0.2); border-radius: 15px; padding: 20px; height: 100%; }
+
+    :global(.session-table) { width: 100%; border-collapse: collapse; }
+    :global(.session-table th) { font-size: 0.8rem; padding-bottom: 15px; color: #444; font-style: italic; }
+    :global(.session-table td) { font-family: monospace; padding: 8px; font-size: 0.95rem; font-style: italic; }
+
+    :global(.export-controls) { display: flex; flex-direction: column; gap: 15px; justify-content: flex-end; }
+    
+    :global(.btn-export) {
+        background-color: var(--btn-purple);
+        color: white;
+        border: none;
+        padding: 15px 70px;
+        border-radius: 12px;
+        font-weight: bold;
+        cursor: pointer;
+        min-width: 250px;
+        transition: 0.3s;
+    }
+
+    :global(.btn-export:hover) { background-color: rgba(164, 80, 186, 0.9); }
+
+    .logo-container { display: flex; align-items: center; gap: 15px; }
+    .logo-tec { height: 35px; filter: brightness(0) invert(1); }
+    .logo-unae { height: 55px; }
+    .divider { width: 1px; height: 40px; background: rgba(255,255,255,0.3); }
+
+    @media print {
+        .back-arrow, :global(.search-container), :global(.export-controls) { display: none; }
+        body { background: white !important; color: black; padding: 0; }
+        :global(.summary-row), :global(.session-details-card) { box-shadow: none; border: 1px solid #ddd; }
+    }
+</style>

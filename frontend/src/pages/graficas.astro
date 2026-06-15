@@ -1,0 +1,128 @@
+---
+import AnalyticsDashboard from '../components/AnalyticsDashboard.jsx';
+---
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Analítico - Memoretos</title>
+</head>
+<body>
+    <div class="main-container">
+        <header class="header-section">
+            <div class="title-group">
+                <div class="title-row">
+                    <a href="/dashboard" class="back-arrow-white">←</a>
+                    <h1>DASHBOARD</h1>
+                </div>
+                <p>Análisis por Clases</p>
+            </div>
+            <div class="logo-container">
+                <img src="https://uniconexed.org/wp-content/uploads/2022/03/Tec-de-Monterrey-logo-horizontal-blue.png" alt="Tec" class="logo-tec">
+                <div class="divider"></div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqgYZIRFwklAQqOAdsTuabq0FN_28MIONRPQ&s" alt="UNAE" class="logo-unae">
+            </div>
+        </header>
+
+        <AnalyticsDashboard client:only="react" />
+    </div>
+</body>
+</html>
+
+<style>
+    :root {
+        --dark-purple: #4b013e;
+        --light-purple: #a450ba;
+        --bg-crema: #f1ede4;
+    }
+
+    body {
+        background: linear-gradient(135deg, var(--dark-purple), var(--light-purple));
+        height: 100vh;
+        margin: 0;
+        color: white;
+        font-family: 'Segoe UI', sans-serif;
+        overflow: hidden;
+    }
+
+    .main-container { 
+        display: flex; 
+        flex-direction: column; 
+        height: 100%; 
+        padding: 20px 40px; 
+    }
+
+    .header-section { 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: flex-start; 
+        margin-bottom: 20px;
+    }
+
+    .title-row { display: flex; align-items: center; gap: 15px; }
+    :global(.back-arrow-white) { 
+        text-decoration: none; 
+        color: white; 
+        font-size: 3rem; 
+        font-weight: 300; 
+    }
+
+    .title-group h1 { font-size: 3.5rem; font-weight: 300; margin: 0; }
+    .title-group p { font-size: 1.5rem; opacity: 0.9; margin-left: 65px; margin-top: -10px; }
+
+    .logo-container { display: flex; align-items: center; gap: 20px; }
+    .logo-tec { height: 35px; filter: brightness(0) invert(1); }
+    .logo-unae { height: 60px; }
+    .divider { width: 1px; height: 50px; background: white; opacity: 0.3; }
+
+    /* Estilos para los carruseles */
+    :global(.vertical-scroll-container) { 
+        flex: 1; 
+        overflow-y: auto; 
+        padding-right: 15px; 
+    }
+    
+    :global(.horizontal-carousel) { 
+        display: flex; 
+        overflow-x: auto; 
+        gap: 25px; 
+        padding: 20px 0; 
+    }
+
+    /* Ocultar scrollbars pero permitir scroll */
+    :global(.vertical-scroll-container::-webkit-scrollbar), 
+    :global(.horizontal-carousel::-webkit-scrollbar) { 
+        display: none; 
+    }
+
+    :global(.group-title) {
+        margin-top: 40px;
+        font-weight: 300;
+        font-size: 1.5rem;
+        border-left: 5px solid white;
+        padding-left: 15px;
+    }
+
+    :global(.chart-card-btn) { 
+        flex: 0 0 320px; 
+        transition: transform 0.2s; 
+    }
+    
+    :global(.chart-card-btn:hover) { transform: translateY(-5px); }
+
+    :global(.plotly-preview) {
+        background-color: var(--bg-crema);
+        height: 220px;
+        border-radius: 20px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+        overflow: hidden;
+    }
+
+    :global(.btn-label) { 
+        display: block; 
+        text-align: center; 
+        margin-top: 12px; 
+        font-weight: bold; 
+        color: white;
+    }
+</style>

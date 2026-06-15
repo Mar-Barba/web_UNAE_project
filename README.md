@@ -10,15 +10,7 @@ Equipo:
 - Miguel Ángel Garduño Manrique A01668481
 - Rafael Antonio Carrión Ortega A01660812
   v2.0
-
-Clase miércoles 7 de abril / Profesor Leonardo
-Acuerdos:
-
-- Armando: Correcciones de frontend para registro
-- Atl: Cambios en el storyboard
-- Marbella: Desarrollo del frontend
-- Miguel: Edición de la base de datos,creacion de endpoints y publicación de url final: https://memoretos.atoligue.uber.space/api
-- Rafael: Modificaciones del documento pasado
+url final: https://memoretos.atoligue.uber.space/api
 
 ---
 
